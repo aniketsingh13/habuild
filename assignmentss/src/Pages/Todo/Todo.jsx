@@ -15,7 +15,10 @@ const Todo = () => {
     setInput("");
   }
 
-  console.log(data);
+  function deleteTodo(ID){
+     setData(data.filter(item => item.id !== ID))
+  }
+
   return (
     <div>
       <Header />
@@ -44,7 +47,7 @@ const Todo = () => {
             <div className="todo_data" key={item.id}>
               <span className="todo_inputs">{item.input}</span>
               <span className="todo_editDelete">
-                <span className="todo_delete">
+                <span className="todo_delete" onClick={() => deleteTodo(item.id)}>
                   <AiOutlineDelete />
                 </span>
                 <span>
