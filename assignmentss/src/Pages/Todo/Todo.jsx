@@ -1,9 +1,15 @@
 import React from 'react';
+import Header from '../../Component/Header/Header';
 import "./Todo.css"
 
 const Todo = () => {
   return (
-    <div>Todo</div>
+    <div >
+        <Header />
+       <div className='Todo_center'>
+
+       </div>
+    </div>
   )
 }
 

@@ -1,0 +1,15 @@
+.headerTop{
+    text-decoration: none;
+}
+
+.header_link{
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+   font-size: 1.7rem;
+   font-weight: 500;
+}
+
+.header_link:hover{
+    color: blue;
+}

@@ -1,9 +1,12 @@
 import React from 'react'
+import Header from '../../Component/Header/Header'
 import "./Tictactoe.css"
 
 const Tictactoe = () => {
   return (
-    <div>Tictactoe</div>
+    <div>
+      <Header />
+    </div>
   )
 }
 
