@@ -5,3 +5,47 @@
     justify-self: center;
     margin-top: 2rem;
 }
+.todo_body{
+    margin-top: 1rem;
+}
+.todo_input{
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+    background-color: blueviolet;
+    color: whitesmoke;
+}
+.todo_button{
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+}
+.todo_addIcon{
+    margin-top: .5rem;
+    font-size: 1.5rem ;
+    color: white;
+    background-color: blueviolet
+}
+.todo_body{
+    background-color: blueviolet;
+}
+.todo_data{
+    margin-top: 1rem;
+    width: 18rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;  
+}
+.todo_editDelete{
+    padding-right: .5rem;
+}
+.todo_inputs{
+    padding-left: .5rem;
+}
+.todo_delete{
+    margin-right: .5rem;
+}
