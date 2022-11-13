@@ -14,7 +14,7 @@
     border: none;
     outline: none;
     background-color: blueviolet;
-    color: whitesmoke;
+    color: white;
 }
 .todo_button{
     height: 2rem;
@@ -49,4 +49,10 @@
 }
 .todo_delete{
     margin-right: .5rem;
+}
+.todo_delete:hover{
+    color: red
+}
+.todo_edit:hover{
+    color: white
 }
