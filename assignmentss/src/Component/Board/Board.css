@@ -1,0 +1,19 @@
+.board_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board_winner{
+    color: rebeccapurple;
+    margin-right: 1rem;
+    font-size: x-large;
+    font-weight: 700;
+}
+.board_btn{
+    font-size: 1.3rem;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 5px;
+}
