@@ -44,21 +44,6 @@ const Board = () => {
 
   return (
     <div>
-      <div className="board_row">
-        <Square onClick={() => handleClick(0)} value={data[0]} />
-        <Square onClick={() => handleClick(1)} value={data[1]} />
-        <Square onClick={() => handleClick(2)} value={data[2]} />
-      </div>
-      <div className="board_row">
-        <Square onClick={() => handleClick(3)} value={data[3]} />
-        <Square onClick={() => handleClick(4)} value={data[4]} />
-        <Square onClick={() => handleClick(5)} value={data[5]} />
-      </div>
-      <div className="board_row">
-        <Square onClick={() => handleClick(6)} value={data[6]} />
-        <Square onClick={() => handleClick(7)} value={data[7]} />
-        <Square onClick={() => handleClick(8)} value={data[8]} />
-      </div>
       <div>
         {isWinner ? (
           <div className="board_row" style={{ marginTop: "1rem" }}>
@@ -68,11 +53,28 @@ const Board = () => {
             </button>
           </div>
         ) : (
-          <div className="board_row" style={{ marginTop: "1rem" }}>
-            <button onClick={handleReset} className="board_btn">
-              Reset
-            </button>
-          </div>
+          <>
+            <div className="board_row">
+              <Square onClick={() => handleClick(0)} value={data[0]} />
+              <Square onClick={() => handleClick(1)} value={data[1]} />
+              <Square onClick={() => handleClick(2)} value={data[2]} />
+            </div>
+            <div className="board_row">
+              <Square onClick={() => handleClick(3)} value={data[3]} />
+              <Square onClick={() => handleClick(4)} value={data[4]} />
+              <Square onClick={() => handleClick(5)} value={data[5]} />
+            </div>
+            <div className="board_row">
+              <Square onClick={() => handleClick(6)} value={data[6]} />
+              <Square onClick={() => handleClick(7)} value={data[7]} />
+              <Square onClick={() => handleClick(8)} value={data[8]} />
+            </div>
+            <div className="board_row" style={{ marginTop: "1rem" }}>
+              <button onClick={handleReset} className="board_btn">
+                Reset
+              </button>
+            </div>
+          </>
         )}
       </div>
     </div>
